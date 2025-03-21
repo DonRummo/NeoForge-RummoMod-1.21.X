@@ -1,4 +1,8 @@
 {
   "item.rummomod.ruby": "Ruby",
-  "item.rummomod.raw_ruby": "Raw Ruby"
+  "item.rummomod.raw_ruby": "Raw Ruby",
+  "item.rummomod.ruby_shard": "Ruby Shard",
+
+  "itemGroup.rummomod.rummo_items_tab": "Rummo's Items",
+  "itemGroup.rummomod.rummo_blocks_tab": "Rummo's Blocks"
 }

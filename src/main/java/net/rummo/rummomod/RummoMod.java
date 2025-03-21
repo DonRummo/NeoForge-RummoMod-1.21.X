@@ -1,6 +1,8 @@
 package net.rummo.rummomod;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.rummo.rummomod.block.ModBlocks;
+import net.rummo.rummomod.item.ModCreativeModeTabs;
 import net.rummo.rummomod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -38,7 +40,11 @@ public class RummoMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -72,6 +78,7 @@ public class RummoMod
         {
             event.accept(ModItems.RUBY);
             event.accept(ModItems.RAW_RUBY);
+            event.accept(ModItems.RUBY_SHARD);
         }
     }
 
