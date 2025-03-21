@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.rummo.rummomod.RummoMod;
+import net.rummo.rummomod.item.custom.FireStaffItem;
 
 public class ModItems
 {
@@ -14,6 +15,9 @@ public class ModItems
     public static final DeferredItem<Item> RAW_RUBY =
             ITEMS.registerItem("raw_ruby", Item::new, new Item.Properties());
     public static final DeferredItem<Item> RUBY_SHARD = ITEMS.registerSimpleItem("ruby_shard");
+
+    public static final DeferredItem<Item> FIRE_STAFF =
+            ITEMS.registerItem("fire_staff", FireStaffItem::new, new Item.Properties().durability(64));
 
     public static void register(IEventBus eventBus)
     {

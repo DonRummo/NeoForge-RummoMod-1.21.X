@@ -26,6 +26,9 @@ public class ModCreativeModeTabs
                         pOutput.accept(ModItems.RAW_RUBY);
                         pOutput.accept(ModItems.RUBY_SHARD);
                         pOutput.accept(ModItems.RUBY);
+
+                        pOutput.accept(ModItems.FIRE_STAFF);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> RUMMO_BLOCKS_TAB =
@@ -36,6 +39,7 @@ public class ModCreativeModeTabs
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.RUBY_BLOCK);
                         pOutput.accept(ModBlocks.RUBY_DEEPSLATE_ORE);
+                        
                     }).build());
 
     public static void register(IEventBus eventBus)
