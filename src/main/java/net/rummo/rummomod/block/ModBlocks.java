@@ -12,7 +12,6 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.rummo.rummomod.RummoMod;
 import net.rummo.rummomod.item.ModItems;
-import net.rummo.rummomod.block.custom.QuicksandBlock;
 
 import java.util.function.Supplier;
 
@@ -23,9 +22,6 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(4f).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> QUICKSAND = registerBlock("quicksand",
-            () -> new QuicksandBlock(BlockBehaviour.Properties.of().sound(SoundType.SAND).strength(0.5F)));
 
     public static final DeferredBlock<Block> RUBY_DEEPSLATE_ORE = registerBlock("ruby_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(5, 7), BlockBehaviour.Properties.of()
