@@ -28,6 +28,8 @@ public class ModCreativeModeTabs
                         pOutput.accept(ModItems.UNCUT_RUBY);
                         pOutput.accept(ModItems.RUBY);
 
+                        pOutput.accept(ModItems.QUICKSAND_BUCKET);
+
                         pOutput.accept(ModItems.FIRE_STAFF);
 
                     }).build());
@@ -40,7 +42,9 @@ public class ModCreativeModeTabs
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.RUBY_BLOCK);
                         pOutput.accept(ModBlocks.RUBY_DEEPSLATE_ORE);
-                        
+
+                        pOutput.accept(ModBlocks.QUICKSAND);
+
                     }).build());
 
     public static void register(IEventBus eventBus)

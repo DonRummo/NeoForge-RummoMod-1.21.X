@@ -5,6 +5,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -22,7 +23,7 @@ public class FireStaffItem extends Item
 {
     private static final int CHARGE_DURATION = 80; // How long to charge before the slam ability activates
     private static final float SHOCKWAVE_RADIUS = 8.0F; // Radius of the shockwave effect
-    private static final double KNOCKBACK_STRENGTH = 1.5D; // Knockback strength applied to entities
+    private static final double KNOCKBACK_STRENGTH = 5.5D; // Knockback strength applied to entities
     private static final float FIREBALL_DAMAGE = 5.0F; // Damage dealt by the fireball
 
     public FireStaffItem(Properties properties) {
@@ -150,6 +151,8 @@ public class FireStaffItem extends Item
                     // Apply knockback and set the target on fire
                     target.setDeltaMovement(knockbackDirection);
                     target.setRemainingFireTicks(100); // 100 ticks = 5 seconds on fire
+
+                    target.hurt(player.damageSources().magic(), 10.F);
                 }
             }
         }
