@@ -12,8 +12,8 @@ public class ModItems
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RummoMod.MOD_ID);
 
     public static final DeferredItem<Item> RUBY = ITEMS.registerSimpleItem("ruby");
-    public static final DeferredItem<Item> RAW_RUBY =
-            ITEMS.registerItem("raw_ruby", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> RAW_RUBY = ITEMS.registerSimpleItem("raw_ruby");
+    public static final DeferredItem<Item> UNCUT_RUBY = ITEMS.registerSimpleItem("uncut_ruby");
     public static final DeferredItem<Item> RUBY_SHARD = ITEMS.registerSimpleItem("ruby_shard");
 
     public static final DeferredItem<Item> FIRE_STAFF =

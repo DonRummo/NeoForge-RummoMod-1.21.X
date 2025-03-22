@@ -1,7 +1,8 @@
 {
-  "item.rummomod.ruby": "Ruby",
-  "item.rummomod.raw_ruby": "Raw Ruby",
   "item.rummomod.ruby_shard": "Ruby Shard",
+  "item.rummomod.raw_ruby": "Raw Ruby",
+  "item.rummomod.uncut_ruby": "Uncut Ruby",
+  "item.rummomod.ruby": "Ruby",
 
   "item.rummomod.fire_staff": "Flaming Ruby Scepter",
 

@@ -23,8 +23,9 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("itemGroup.rummomod.rummo_items_tab"))
                     .icon(() -> new ItemStack(ModItems.RAW_RUBY.get()))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.RAW_RUBY);
                         pOutput.accept(ModItems.RUBY_SHARD);
+                        pOutput.accept(ModItems.RAW_RUBY);
+                        pOutput.accept(ModItems.UNCUT_RUBY);
                         pOutput.accept(ModItems.RUBY);
 
                         pOutput.accept(ModItems.FIRE_STAFF);

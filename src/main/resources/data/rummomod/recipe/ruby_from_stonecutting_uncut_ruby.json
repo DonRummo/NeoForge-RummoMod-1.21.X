@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "rummomod:uncut_ruby"
+  },
+  "result": {
+    "count": 1,
+    "id": "rummomod:ruby"
+  }
+}
