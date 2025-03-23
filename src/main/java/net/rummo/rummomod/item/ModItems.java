@@ -16,6 +16,9 @@ public class ModItems
     public static final DeferredItem<Item> UNCUT_RUBY = ITEMS.registerSimpleItem("uncut_ruby");
     public static final DeferredItem<Item> RUBY_SHARD = ITEMS.registerSimpleItem("ruby_shard");
 
+    public static final DeferredItem<Item> CHEESE_WEDGE =
+            ITEMS.registerItem("cheese_wedge", Item::new, new Item.Properties().food(ModFoodProperties.CHEESE_WEDGE));
+
     public static final DeferredItem<Item> FIRE_STAFF =
             ITEMS.registerItem("fire_staff", FireStaffItem::new, new Item.Properties().durability(64));
 

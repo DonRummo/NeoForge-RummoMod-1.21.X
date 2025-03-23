@@ -4,13 +4,12 @@
   "item.rummomod.uncut_ruby": "Uncut Ruby",
   "item.rummomod.ruby": "Ruby",
 
-  "item.rummomod.quicksand_bucket": "Quicksand Bucket",
-
   "item.rummomod.fire_staff": "Flaming Ruby Scepter",
 
+  "item.rummomod.cheese_wedge": "Cheese Wedge",
+
   "block.rummomod.ruby_block": "Block of Ruby",
-  "block.rummomod.ruby_deepslate_ore": "Block of Ruby",
-  "block.rummomod.quicksand": "Quicksand Block",
+  "block.rummomod.ruby_deepslate_ore": "Deepslate Ruby Ore",
 
   "itemGroup.rummomod.rummo_items_tab": "Rummo's Items",
   "itemGroup.rummomod.rummo_blocks_tab": "Rummo's Blocks"

@@ -30,6 +30,8 @@ public class ModCreativeModeTabs
 
                         pOutput.accept(ModItems.FIRE_STAFF);
 
+                        pOutput.accept(ModItems.CHEESE_WEDGE);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> RUMMO_BLOCKS_TAB =
