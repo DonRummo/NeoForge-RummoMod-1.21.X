@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.5,
+  "group": "ruby",
+  "ingredient": {
+    "item": "rummomod:raw_ruby"
+  },
+  "result": {
+    "count": 1,
+    "id": "rummomod:ruby"
+  }
+}

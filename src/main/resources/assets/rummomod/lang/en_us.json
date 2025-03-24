@@ -1,15 +1,21 @@
 {
   "item.rummomod.ruby_shard": "Ruby Shard",
   "item.rummomod.raw_ruby": "Raw Ruby",
-  "item.rummomod.uncut_ruby": "Uncut Ruby",
   "item.rummomod.ruby": "Ruby",
+
+  "item.rummomod.blazing_core": "Blazing Core",
 
   "item.rummomod.fire_staff": "Flaming Ruby Scepter",
 
-  "item.rummomod.cheese_wedge": "Cheese Wedge",
+  "item.rummomod.basalt_bowl": "Basalt Bowl",
+  "item.rummomod.ruby_ragout": "Blazing Ruby Ragout",
 
   "block.rummomod.ruby_block": "Block of Ruby",
   "block.rummomod.ruby_deepslate_ore": "Deepslate Ruby Ore",
+
+  "tooltip.rummomod.fire_staff.tooltip.shift": "Press §eShift§r for more Information!",
+  "tooltip.rummomod.fire_staff.tooltip.1": "Press §eRight Mouse Button§r to Shoot Fireballs!",
+  "tooltip.rummomod.fire_staff.tooltip.2": "Crouch and Hold §eRight Mouse Button§r to Create a Fiery Shockwave!",
 
   "itemGroup.rummomod.rummo_items_tab": "Rummo's Items",
   "itemGroup.rummomod.rummo_blocks_tab": "Rummo's Blocks"

@@ -1,6 +1,8 @@
 package net.rummo.rummomod.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -10,8 +12,10 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.SmallFireball;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
@@ -21,7 +25,7 @@ import java.util.List;
 
 public class FireStaffItem extends Item
 {
-    private static final int CHARGE_DURATION = 80; // How long to charge before the slam ability activates
+    private static final int CHARGE_DURATION = 70; // How long to charge before the slam ability activates
     private static final float SHOCKWAVE_RADIUS = 8.0F; // Radius of the shockwave effect
     private static final double KNOCKBACK_STRENGTH = 5.5D; // Knockback strength applied to entities
     private static final float FIREBALL_DAMAGE = 5.0F; // Damage dealt by the fireball
@@ -159,5 +163,19 @@ public class FireStaffItem extends Item
 
         // Play sound to indicate the shockwave activation
         level.playSound(null, position.x, position.y, position.z, SoundEvents.GENERIC_EXPLODE, SoundSource.PLAYERS, 1.5F, 0.8F);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag)
+    {
+        if (Screen.hasShiftDown())
+        {
+            tooltipComponents.add(Component.translatable("tooltip.rummomod.fire_staff.tooltip.1"));
+            tooltipComponents.add(Component.translatable("tooltip.rummomod.fire_staff.tooltip.2"));
+        } else {
+            tooltipComponents.add(Component.translatable("tooltip.rummomod.fire_staff.tooltip.shift"));
+        }
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

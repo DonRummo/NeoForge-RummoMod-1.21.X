@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.rummo.rummomod.RummoMod;
+import net.rummo.rummomod.RummoGems;
 import net.rummo.rummomod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 public class ModBlocks
 {
     public static final DeferredRegister.Blocks BLOCKS =
-            DeferredRegister.createBlocks(RummoMod.MOD_ID);
+            DeferredRegister.createBlocks(RummoGems.MOD_ID);
 
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(4f).requiresCorrectToolForDrops()));

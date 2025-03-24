@@ -6,9 +6,8 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties
 {
-    public static final FoodProperties CHEESE_WEDGE = new FoodProperties.Builder()
-            .nutrition(5)
-            .saturationModifier(0.45F)
-            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 1800, 0), 0.025F)
+    public static final FoodProperties RUBY_RAGOUT = new FoodProperties.Builder()
+            .nutrition(8)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1800, 0), 1.0F)
             .build();
 }

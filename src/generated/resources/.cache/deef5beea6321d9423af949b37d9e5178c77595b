@@ -1,0 +1,4 @@
+// 1.21.1	2025-03-23T21:53:24.9651558	Tags for minecraft:block mod id rummomod
+be0175124c126dd6d65a98978e38b07b70f50fde data/minecraft/tags/block/mineable/pickaxe.json
+f437e0cdc576699b7f799a1183eede3fbf64cddf data/minecraft/tags/block/needs_diamond_tool.json
+93d842f3c41129b9e8690947df480b2adf80cf14 data/minecraft/tags/block/needs_iron_tool.json
