@@ -35,6 +35,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
     protected void generate()
     {
         dropSelf(ModBlocks.RUBY_BLOCK.get());
+        dropSelf(ModBlocks.MARBLE.get());
 
         this.add(ModBlocks.RUBY_DEEPSLATE_ORE.get(),
         block -> createMultipleOreDrops(ModBlocks.RUBY_DEEPSLATE_ORE.get(),

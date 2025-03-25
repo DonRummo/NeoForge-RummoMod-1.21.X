@@ -24,7 +24,11 @@ public class ModBlockTagProvider extends BlockTagsProvider
     {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.RUBY_DEEPSLATE_ORE.get())
-                .add(ModBlocks.RUBY_BLOCK.get());
+                .add(ModBlocks.RUBY_BLOCK.get())
+                .add(ModBlocks.MARBLE.get());
+
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.MARBLE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK.get());

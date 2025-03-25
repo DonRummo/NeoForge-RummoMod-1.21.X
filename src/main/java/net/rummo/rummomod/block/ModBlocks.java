@@ -27,6 +27,9 @@ public class ModBlocks
             () -> new DropExperienceBlock(UniformInt.of(5, 7), BlockBehaviour.Properties.of()
                     .sound(SoundType.DEEPSLATE).strength(6f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> MARBLE = registerBlock("marble",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f).requiresCorrectToolForDrops()));
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)

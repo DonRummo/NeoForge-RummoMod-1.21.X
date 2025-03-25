@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider
     protected void registerStatesAndModels()
     {
         blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.MARBLE);
         blockWithItem(ModBlocks.RUBY_DEEPSLATE_ORE);
     }
 
