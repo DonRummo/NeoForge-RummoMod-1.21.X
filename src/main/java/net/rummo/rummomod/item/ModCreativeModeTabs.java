@@ -22,6 +22,7 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("itemGroup.rummomod.rummo_items_tab"))
                     .icon(() -> new ItemStack(ModItems.RAW_RUBY.get()))
                     .displayItems((pParameters, pOutput) -> {
+
                         pOutput.accept(ModItems.RUBY_SHARD);
                         pOutput.accept(ModItems.RAW_RUBY);
                         pOutput.accept(ModItems.RUBY);
@@ -41,8 +42,10 @@ public class ModCreativeModeTabs
                     .icon(() -> new ItemStack(ModBlocks.RUBY_DEEPSLATE_ORE.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(RummoGems.MOD_ID, "rummo_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
                         pOutput.accept(ModBlocks.RUBY_BLOCK);
                         pOutput.accept(ModBlocks.RUBY_DEEPSLATE_ORE);
+                        pOutput.accept(ModBlocks.MARBLE);
 
                     }).build());
 

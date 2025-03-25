@@ -1,7 +1,10 @@
-// 1.21.1	2025-03-23T21:53:24.9667614	Block States: rummomod
+// 1.21.1	2025-03-25T13:00:43.296871973	Block States: rummomod
+05338a840993215ec5f4609f9e3326e6effa47a8 assets/rummomod/blockstates/marble.json
 1fd1d05cd14f183a616124af2caec16dcd383a89 assets/rummomod/blockstates/ruby_block.json
 5978e896424caaa75734f52e0f5a9a9b6fd7c525 assets/rummomod/blockstates/ruby_deepslate_ore.json
+a1fe47f3107a669942eafd34b2681fbcfa78ebfc assets/rummomod/models/block/marble.json
 91a4d34eb4597d54ec483d371ebf1795cc825164 assets/rummomod/models/block/ruby_block.json
 7e296170462c5005448ed486666eed53ca955717 assets/rummomod/models/block/ruby_deepslate_ore.json
+44859cd798dff7abb97e3ff76f606e909de02d4d assets/rummomod/models/item/marble.json
 97bdcf39037b32865ebcd07643f40c8a02fbf6cc assets/rummomod/models/item/ruby_block.json
 e028f4da99a1f66f77c82725ffe658e0078d6353 assets/rummomod/models/item/ruby_deepslate_ore.json

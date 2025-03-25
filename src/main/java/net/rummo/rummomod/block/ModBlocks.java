@@ -28,7 +28,7 @@ public class ModBlocks
                     .sound(SoundType.DEEPSLATE).strength(6f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> MARBLE = registerBlock("marble",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(4f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
 
 
 

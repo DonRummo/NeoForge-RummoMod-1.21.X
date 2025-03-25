@@ -13,6 +13,8 @@
   "block.rummomod.ruby_block": "Block of Ruby",
   "block.rummomod.ruby_deepslate_ore": "Deepslate Ruby Ore",
 
+  "block.rummomod.marble": "Marble",
+
   "tooltip.rummomod.fire_staff.tooltip.shift": "Press §eShift§r for more Information!",
   "tooltip.rummomod.fire_staff.tooltip.1": "Press §eRight Mouse Button§r to Shoot Fireballs!",
   "tooltip.rummomod.fire_staff.tooltip.2": "Crouch and Hold §eRight Mouse Button§r to Create a Fiery Shockwave!",
